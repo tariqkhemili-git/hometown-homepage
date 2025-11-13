@@ -22,7 +22,7 @@ This project is a modern, accessible homepage for visitors to London. It highlig
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/tariqkhemili-git/london-visitor-homepage.git
+   git clone https://github.com/tariqkhemili-git/hometown-homepage.git
    ```
 2. Open `index.html` in your browser to view the homepage.
 
