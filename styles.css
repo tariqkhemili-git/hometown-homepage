@@ -1,28 +1,39 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
+:root {
+  --background: #181a1b;
+  --surface: #23272a;
+  --primary: #0074d9;
+  --secondary: #ffd700;
+  --accent: #ff851b;
+  --error: #b22222;
+  --text: #ffffff;
+  --surface-alt: #2c3136;
+  --card-section-bg: #23272a;
+  --card-bg: #004466;
+}
 
-*/
+#local-tips {
+  background-color: #1a2233;
+  color: #f4f4f9;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  margin-top: 0;
+}
 
 body {
   margin: 0;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-  width: 100px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #101820;
+  color: #f4f4f9;
 }
 
 #hero {
   height: 343px;
-  background-image: url(/images/torshov.jpg);
+  background-image: url(https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/topic-london-gettyimages-760251843-feature?_a=BAVAZGID0);
   padding: 2rem;
   background-size: cover;
+  background-color: #1a2233;
 }
 
 .titles {
@@ -32,28 +43,41 @@ img {
   width: fit-content;
   padding: 5px 10px;
   border-radius: 10px;
-  color: #fff;
+  color: #f4f4f9;
 }
 
 #title {
   margin: 0 auto;
-  background-color: #1d3557;
+  background-color: #1a2233;
+  color: #5ab9ea;
+}
+
+#title:hover {
+  background-color: #5ab9ea;
+  color: #1a2233;
 }
 
 #subtitle {
-  background-color: #457b9d;
+  background-color: #1a2233;
+  color: #f6d55c;
+}
+
+#subtitle:hover {
+  background-color: #f6d55c;
+  color: #1a2233;
 }
 
 #activities-section {
   display: block;
-  background-color: #f1faee;
-  color: #1d3557;
+  background-color: #142332;
+  color: #f4f4f9;
 }
 
 #activity-title {
   margin: 0;
   padding: 2rem;
   font-size: 24px;
+  color: #5ab9ea;
 }
 
 #activities {
@@ -61,22 +85,32 @@ img {
   justify-content: center;
   gap: 2rem;
   padding-bottom: 2rem;
-  margin-inline: auto;
+  margin-inline: 2rem;
 }
 
 .activity img {
   border-radius: 50%;
+  aspect-ratio: 1/1;
+  box-shadow: 0 0 10px var(--surface);
+  width: 150px;
 }
 
 .activity-title {
   font-weight: 700;
 }
 
+#card-section {
+  display: block;
+  background-color: var(--card-section-bg);
+  color: var(--text);
+  padding: 1px 0;
+}
+
 #card {
   display: flex;
-  background-color: #a8dadc;
-  color: #1d3557;
-  box-shadow: 0px 8px 0px #1d3557;
+  background-color: var(--card-bg);
+  color: var(--text);
+  box-shadow: 0px 8px 0px var(--background);
   max-width: 400px;
   margin: 2rem auto;
   padding: 1rem;
@@ -86,12 +120,39 @@ img {
 #card img {
   width: 180px;
   border-radius: 10px;
+  box-shadow: 0 0 10px var(--background);
 }
 
 #card h3 {
   font-size: 24px;
+  color: var(--accent);
 }
 
 #card p {
   font-style: italic;
+  color: var(--error);
+  padding: 0 1rem;
+}
+
+#local-tips h3 {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 24px;
+  color: #f6d55c;
+}
+
+#tips {
+  color: var(--text);
+  padding: 1rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tips li {
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: var(--surface-alt);
+  border-radius: 10px;
+  padding: 1rem;
 }
