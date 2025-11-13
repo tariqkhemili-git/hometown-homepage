@@ -9,10 +9,89 @@ DARK BLUE: #1D3557
 */
 
 body {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
-    width: 100px;
+  width: 100px;
+}
+
+#hero {
+  height: 343px;
+  background-image: url(/images/torshov.jpg);
+  padding: 2rem;
+  background-size: cover;
+}
+
+.titles {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#title {
+  margin: 0 auto;
+  background-color: #1d3557;
+}
+
+#subtitle {
+  background-color: #457b9d;
+}
+
+#activities-section {
+  display: block;
+  background-color: #f1faee;
+  color: #1d3557;
+}
+
+#activity-title {
+  margin: 0;
+  padding: 2rem;
+  font-size: 24px;
+}
+
+#activities {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-inline: auto;
+}
+
+.activity img {
+  border-radius: 50%;
+}
+
+.activity-title {
+  font-weight: 700;
+}
+
+#card {
+  display: flex;
+  background-color: #a8dadc;
+  color: #1d3557;
+  box-shadow: 0px 8px 0px #1d3557;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#card img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+#card h3 {
+  font-size: 24px;
+}
+
+#card p {
+  font-style: italic;
 }
