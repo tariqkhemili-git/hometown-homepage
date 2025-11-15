@@ -4,7 +4,7 @@ This project is a modern, accessible homepage for visitors to London. It highlig
 
 ## Features
 
-- Accessible colour palette with high contrast for readability
+- Accessible colour palette with high contrast for readability h
 - ARIA labels for major sections and headings
 - Descriptive alt text for all images
 - Responsive layout using Flexbox
